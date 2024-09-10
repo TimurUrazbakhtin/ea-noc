@@ -1,0 +1,5 @@
+.accordion-body {
+	transition: height 1s ease-out;
+    height: 0;
+    overflow: hidden;
+}

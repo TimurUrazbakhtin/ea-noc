@@ -1,0 +1,90 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.74);
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup__content {
+    box-shadow: 5px 6px 28px 0 rgba(0, 0, 0, 0.24);
+    background-color: #fff;
+    border-radius: 14px;
+    max-width: 480px;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+    position: relative;
+}
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+.popup.active .popup__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.popup__title {
+    padding: 0 5%;
+    margin: 0 0 16px 0;
+}
+.popup__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    padding: 0 5%;
+    margin: 0 0 16px 0;
+}
+.popup__close {
+    background: none;
+    border: none;
+    padding: 0;
+    background: url("../images/popup/close.svg") no-repeat center / contain;
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.popup__button-wrapper {
+    display: flex;
+    gap: 20px;
+}
+.popup__button {
+    width: 100%;
+    height: 40px;
+}
+.popup__select {
+    height: 40px;
+    margin: 0 0 10px 0;
+}
+.popup__checkbox {
+    margin: 0 0 10px 0;
+}
+.popup__checkbox .checkbox__label {
+    color: #000;
+}
+.popup__checkbox .checkbox__label::before,
+.popup__checkbox .checkbox__input {
+    border-color: #000;
+}
+
+.popup__checkbox-input:focus:not(:checked) + .popup__checkbox-label::before {
+    border-color: #000;
+}

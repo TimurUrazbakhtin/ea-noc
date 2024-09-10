@@ -1,0 +1,101 @@
+.industries__title {
+    margin: 0 0 40px 0;
+}
+.industries__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.industries__elem {
+    width: calc((100% - 50px) / 3);
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.industries__elem::before {
+    content: "";
+    width: 229px;
+    height: 249px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.industries__elem:nth-child(even)::before {
+    background-image: url("../images/industries/decor-industries-1.svg");
+}
+.industries__elem:nth-child(odd)::before {
+    background-image: url("../images/industries/decor-industries-2.svg");
+}
+.industries__elem-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    margin: 0 0 10px 0;
+	position: relative;
+	z-index: 1;
+}
+.industries__elem-desc {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin: 0 0 10px 0;
+	position: relative;
+	z-index: 1;
+}
+.industries__elem-buttons {
+	margin-top: auto;
+	position: relative;
+	z-index: 1;
+}
+.industries__elem-button {
+    height: 50px;
+}
+.industries__elem-button:not(:last-child) {
+    margin: 0 0 12px 0;
+}
+.industries__desc {
+    display: flex;
+    gap: 25px;
+}
+.industries__desc-text {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 144%;
+    text-align: justify;
+    color: #000;
+}
+.industries__desc-title {
+	margin: 0 0 23px 0;
+}
+.industries__desc-img {
+    width: 100%;
+    max-width: 587px;
+	border-radius: 10px;
+	overflow: hidden;
+	height: 100%;
+}
+.industries__desc-img img {
+    width: 100%;
+	display: block;
+}
+@media (max-width: 992px) {
+	.industries__desc {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+    .industries__elem {
+        width: calc((100% - 25px) / 2);
+    }
+}
+@media (max-width: 768px) {
+    .industries__elem {
+        width: 100%;
+    }
+}

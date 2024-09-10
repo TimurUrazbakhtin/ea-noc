@@ -1,0 +1,88 @@
+.footer {
+	background-color: #313b48;
+}
+.footer__top {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	justify-content: space-between;
+	margin: 41px 0 36px 0;
+}
+.footer__top-start {
+	max-width: 300px;
+}
+.footer__title {
+	font-weight: 700;
+	font-size: 25px;
+	color: #fff;
+	margin: 0 0 13px 0;
+}
+.footer__desc {
+	margin: 0 0 8px 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 172%;
+	color: #fff;
+}
+.footer__input {
+	border-color: #fff;
+	color: #fff;
+	margin: 0 0 15px 0;
+}
+.footer__textarea {
+	height: 95px;
+	border-color: #fff;
+	color: #fff;
+	margin: 0 0 10px 0;
+}
+.footer__button {
+	height: 50px;
+}
+.footer__form-button {
+	height: 40px;
+}
+.footer__top-end {
+	max-width: 689px;
+}
+.footer__form {
+	display: flex;
+	column-gap: 25px;
+}
+.footer__form-start {
+	width: 100%;
+	max-width: 40%;
+}
+.footer__form-wrapper-button {
+	display: flex;
+	column-gap: 25px;
+	row-gap: 15px;
+}
+.footer__end {
+	margin: 0 0 13px 0;
+	display: flex;
+	justify-content: center;
+	color: rgba(255, 255, 255, 0.37);
+}
+.footer__end a {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	transition: color 0.3s;
+}
+.footer__end a:hover {
+	color: #fff;
+}
+.footer__checkbox-label {
+	font-size: 8px;
+}
+@media (max-width: 768px) {
+	.footer__form {
+		flex-direction: column;
+	}
+	.footer__form-start {
+		max-width: 100%;
+	}
+	.footer__form-wrapper-button {
+		flex-direction: column-reverse;
+	}
+}

@@ -1,0 +1,69 @@
+@@include('partials/header.html', { "title": "Лаборатория №1", })
+
+<div class="container">
+	<section class="section laboratory">
+		<a href="@@webRoot/laboratories-list.html" class="button-back">
+            ← Вернуться назад
+        </a>
+
+		<h1 class="title">Лаборатория №1</h1>
+		
+		<div class="laboratory__body">
+			<div class="laboratory__top">
+				<div class="laboratory__gallery">
+					<div class="swiper one-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide laboratory__gallery-slide">
+								<img
+									src="@@webRoot/images/desc/gallery-1.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="swiper-slide laboratory__gallery-slide">
+								<img
+									src="@@webRoot/images/desc/gallery-1.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="swiper-slide laboratory__gallery-slide">
+								<img
+									src="@@webRoot/images/desc/gallery-1.jpg"
+									alt=""
+								/>
+							</div>
+						</div>
+	
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+	
+				<div class="laboratory__top-desc">
+					<p>
+						<strong>Количество сотрудников:</strong> 0
+					</p>
+					<p>
+						<strong>Темы исследований:</strong> 0
+					</p>
+					<p>
+						<strong>Материалы технической базы:</strong> 0
+					</p>
+					<p>
+						<strong>Адрес:</strong>
+					</p>
+					<p>
+						<strong>Контактное лицо:</strong> Иванов Иван
+					</p>
+					<p>
+						<strong>Телефон:</strong> +7 (000) 000-00-00
+					</p>
+				</div>
+			</div>
+	
+			<div class="laboratory__desc">
+				<p>Описание лаборатории №1</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+@@include('partials/footer.html')

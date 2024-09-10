@@ -1,0 +1,58 @@
+@@include('partials/header.html', { "title": "Научные лаборатории список", })
+
+<div class="container">
+    <section class="section laboratories">
+        <a href="@@webRoot/laboratories.html" class="button-back">
+            ← Вернуться назад
+        </a>
+
+		<h1 class="title">Список лабораторий БГАУ</h1>
+
+		<div class="desc">
+			<div class="desc__start">
+				<div class="desc__wrapper">
+					@@for (var i = 1; i < 8; i++) {
+					<a href="@@webRoot/laboratory.html" class="desc__elem">
+						Лаборатория №`+i+`
+					</a>
+					}
+				</div>
+			</div>
+	
+			<div class="desc__end">
+				<div class="desc__logo">
+					<img src="@@webRoot/images/desc/logo.svg" alt="" />
+				</div>
+	
+				<div class="desc__gallery desc__gallery_mb-0">
+					<div class="swiper one-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img
+									src="@@webRoot/images/desc/gallery-1.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="@@webRoot/images/desc/gallery-1.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="swiper-slide desc__gallery-slide">
+								<img
+									src="@@webRoot/images/desc/gallery-1.jpg"
+									alt=""
+								/>
+							</div>
+						</div>
+	
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+</div>
+
+@@include('partials/footer.html')

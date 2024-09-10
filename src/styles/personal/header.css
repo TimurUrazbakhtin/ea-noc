@@ -1,0 +1,220 @@
+.header {
+	margin: 0;
+}
+.header__top {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	border: 1px solid #E9E9E9;
+	border-radius: 12px;
+	height: 60px;
+	width: calc(100% - 360px);
+	position: fixed;
+	z-index: 97;
+	top: 20px;
+	right: 20px;
+	padding: 0 15px;
+	transition: margin 0.3s;
+}
+.header.active .header__top {
+	margin: 0;
+	width: calc(100% - 40px);
+}
+.header__burger {
+	display: block;
+    padding: 0;
+    height: 12px;
+    border: none;
+    background: none;
+    position: relative;
+	margin: 0 15px 0 0;
+}
+.header__burger span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #2461FF;
+}
+.header__burger::before,
+.header__burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #2461FF;
+}
+.header__burger::before {
+    top: 0;
+}
+.header__burger::after {
+    bottom: 0;
+}
+.header__text {
+	font-weight: 700;
+	font-size: 16px;
+	color: #000;
+}
+.header__profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header__profile-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid #e9e9e9;
+}
+.header__profile-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.header__profile-name {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+.header__sidebar {
+	width: 300px;
+	height: calc(100vh - 40px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: fixed;
+	z-index: 99;
+	top: 20px;
+	left: 20px;
+	margin: 0 20px 20px 0;
+	background-color: #FFFFFF;
+	border: 1px solid #E9E9E9;
+	border-radius: 12px;
+	transition: left 0.3s;
+}
+.header.active .header__sidebar {
+	left: -100%;
+}
+.header__sidebar-inner {
+	height: calc(100vh - 210px);
+	padding: 0 12px;
+	display: flex;
+	flex-direction: column;
+}
+.header__sidebar-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+.header__logo {
+	height: 40px;
+	margin: 0 0 0 auto;
+}
+.header__logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.header__menu {
+	margin: 20px 0;
+}
+.header__list {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.header__link {
+	padding: 8px 10px;
+	font-size: 14px;
+	color: #000;
+	display: block;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.header__link::before {
+	content: '';
+	display: block;
+	min-width: 20px;
+	width: 20px;
+	height: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.header__link:hover {
+	background-color: #F4F4F4;
+}
+.header__link.active {
+	background-color: #2461FF;
+	color: #FFF;
+}
+.header__link.active::before {
+	filter: invert(100%);
+}
+.header__link_question::before {
+	background-image: url('../images/personal-header/question.svg');
+}
+.header__link_courses::before {
+	background-image: url('../images/personal-header/courses.svg');
+}
+.header__link_prog::before {
+	background-image: url('../images/personal-header/prog.svg');
+}
+.header__link_lab::before {
+	background-image: url('../images/personal-header/lab.svg');
+}
+.header__link_services::before {
+	background-image: url('../images/personal-header/services.svg');
+}
+.header__link_dev::before {
+	background-image: url('../images/personal-header/dev.svg');
+}
+.header__link_direct::before {
+	background-image: url('../images/personal-header/direct.svg');
+}
+
+.header__sidebar-buttons {
+	margin: auto 0 0 0;
+	padding: 0 0 20px 0;
+}
+
+.header__link_back::before {
+	background-image: url('../images/personal-header/back.svg');
+}
+.header__link_exit::before {
+	background-image: url('../images/personal-header/exit.svg');
+}
+
+@media (max-width: 992px) {
+	.header__top {
+		margin: 0;
+		width: calc(100% - 30px);
+		top: 15px;
+		right: 15px;
+	}
+	.header__sidebar {
+		margin: 0;
+		left: -100%;
+		height: calc(100vh - 30px);
+	}
+	.header__sidebar-inner {
+		height: calc(100vh - 200px);
+	}
+	.header.active .header__sidebar {
+		left: 15px;
+		top: 15px;
+		box-shadow: 5px 6px 28px 0 rgba(0, 0, 0, 0.24);
+	}
+}
+@media (max-width: 576px) {
+	.header__text {
+		display: none;
+	}
+}

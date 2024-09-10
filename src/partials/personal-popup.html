@@ -1,0 +1,42 @@
+<div class="popup" id="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<h3 class="title title_center popup__title">
+				Добавление курса
+			</h3>
+
+			<div class="popup__form">
+				<form action="" method="post" enctype="multipart/form-data">
+					<input type="text" class="input" placeholder="Имя" />
+					<input type="text" class="input" placeholder="Организация" />
+					<input type="text" class="input phone" placeholder="+7 (___) ___-____" />
+
+					<input type="email" class="input" placeholder="Почта" />
+
+					<div class="file">
+						<input
+						name="file"
+						type="file"
+						id="file"
+						accept="image/*"
+						class="file__input"
+						multiple
+						/>
+						
+						<label class="file__wrapper" for="file">
+							<div class="file__text">Загрузить фото</div>
+						</label>
+					</div>
+
+					<textarea placeholder="Вопросы" class="textarea"></textarea>
+
+					<button type="submit" class="popup__button button">
+						Отправить
+					</button>
+				</form>
+			</div>
+
+			<button type="button" class="popup__close popup-close"></button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,78 @@
+.about__title {
+	margin: 0 0 30px 0;
+}
+.about__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+.about__elem {
+	width: calc((100% - 50px) / 3);
+	border-radius: 10px;
+	padding: 45px;
+	position: relative;
+	overflow: hidden;
+}
+.about__elem:nth-child(1) {
+	background-color: #2461ff;
+}
+.about__elem:nth-child(2) {
+	background-color: #FF1083;
+}
+.about__elem:nth-child(3) {
+	background-color: #67CD01;
+}
+.about__elem::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.about__elem:nth-child(1)::before {
+	background-image: url('../images/about/about-decor-1.svg');
+	width: 313px;
+	height: 313px;
+}
+.about__elem:nth-child(2)::before {
+	background-image: url('../images/about/about-decor-2.svg');
+	width: 320px;
+	height: 270px;
+}
+.about__elem:nth-child(3)::before {
+	background-image: url('../images/about/about-decor-3.svg');
+	width: 349px;
+	height: 297px;
+}
+.about__elem-title {
+	font-weight: 700;
+	font-size: 20px;
+	color: #fff;
+	margin: 0 0 15px 0;
+}
+.about__elem-desc {
+	font-size: 15px;
+	line-height: 153%;
+	color: #fff;
+}
+
+@media (max-width: 1200px) {
+	.about__elem {
+		padding: 25px;
+	}
+}
+@media (max-width: 992px) {
+	.about__elem {
+		width: calc((100% - 25px) / 2);
+	}
+	.about__elem:nth-child(3) {
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.about__elem {
+		width: 100%;
+	}
+}

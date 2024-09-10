@@ -1,0 +1,154 @@
+@@include('partials/personal-header.html', { "title": "Курсы" })
+
+<section class="bg-white">
+	<div class="page-top">
+		<h3 class="page-top__title">
+			Курсы
+		</h3>
+	
+		<div class="page-top__wrapper">
+			<button type="button" class="button button_plus-circle popup-open" id="popup">
+				Добавить курс 
+			</button>
+		</div>
+	</div>
+
+	<div class="filter">
+		<div class="container">
+			<div class="filter__four-block">
+				<div class="filter__four-block-elem">
+					<form method="get" class="search">
+						<input
+							type="text"
+							class="input search__input"
+							placeholder="Поиск"
+						/>
+						<button type="submit" class="search__button"></button>
+					</form>
+				</div>
+
+				<div class="filter__four-block-elem">
+					<select class="select-choices" aria-label="Выбор направления" data-placeholder="Выбор направления" multiple>
+						<option>
+							Математические и естественные науки
+						</option>
+						<option>
+							Инженерное дело, технологии и технические науки
+						</option>
+						<option>
+							Здравоохранение и медицинские науки
+						</option>
+						<option>
+							Сельское хозяйство и сельскохозяйственные науки
+						</option>
+						<option>
+							Науки об обществе
+						</option>
+						<option>
+							Образование и педагогические науки
+						</option>
+						<option>
+							Гуманитарные науки
+						</option>
+					</select>
+				</div>
+		
+				<div class="filter__four-block-elem">
+					<select class="select-choices" aria-label="Тип программы" data-placeholder="Тип программы" multiple>
+						<option>
+							Курс повышения квалификации
+						</option>
+						<option>
+							Курс переподготовки
+						</option>
+					</select>
+				</div>
+		
+				<div class="filter__four-block-elem">
+					<select class="select-choices" aria-label="Количество часов" data-placeholder="Количество часов" multiple>
+						<option>
+							От 16 до 36
+						</option>
+						<option>
+							От 40 до 96
+						</option>
+						<option>
+							От 100 до 144
+						</option>
+						<option>
+							250 и более
+						</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="table">
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Название
+					</th>
+
+					<th>					
+						Направление
+					</th>
+
+					<th>
+						Количество часов
+					</th>
+
+					<th>
+						Цена
+					</th>
+
+					<th>
+						Тип программы 
+					</th>
+
+					<th>
+						Действия
+					</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				@@for (let i = 1; i < 9; i++) {
+				<tr>
+					<td>
+						Курс `+i+`
+					</td>
+
+					<td>					
+						Направление
+					</td>
+
+					<td>
+						11
+					</td>
+
+					<td>
+						1000&nbsp;₽
+					</td>
+
+					<td>
+						Курс переподготовки
+					</td>
+
+					<td>
+						<div class="table__actions">
+							<a href="#" class="button-action button-action_detail" target="_blank" title="Открыть на сайте"></a>
+							<button type="button" class="button-action button-action_edit" title="Редактировать"></button>
+							<button type="button" class="button-action button-action_del" title="Удалить"></button>	
+						</div>
+					</td>
+				</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</section>
+
+@@include('partials/personal-footer.html')

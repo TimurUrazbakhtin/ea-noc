@@ -1,0 +1,99 @@
+.education-category__elem {
+	height: 353px;
+	padding: 60px 60px 60px 80px;
+	border-radius: 10px;
+	position: relative;
+}
+.education-category__elem:nth-child(odd) {
+	background-color: #e7edff;
+}
+.education-category__elem:nth-child(even) {
+	background-color: #c2eb9a;
+}
+.education-category__elem:not(:last-child) {
+	margin: 0 0 80px 0;
+}
+.education-category__elem::before {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.education-category__elem:nth-child(odd)::before {
+	background-image: url('../images/education-category/education-category-1.png');
+	width: 510px;
+	height: 325px;
+}
+.education-category__elem:nth-child(even)::before {
+	background-image: url('../images/education-category/education-category-2.png');
+	width: 549px;
+	height: 334px;
+}
+.education-category__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 115%;
+	color: #000;
+	max-width: 543px;
+	margin: 0 0 20px 0;
+}
+.education-category__desc {
+	max-width: 543px;
+	margin: 0 0 20px 0;
+}
+.education-category__button {
+	width: 144px;
+	height: 50px;
+}
+@media (max-width: 1200px) {
+	.education-category__elem {
+		padding: 30px 30px 30px 40px;
+	}
+	.education-category__elem:nth-child(odd)::before {
+		width: 421px;
+        height: 270px;
+	}
+	.education-category__elem:nth-child(even)::before {
+		width: 409px;
+        height: 250px;
+	}
+}
+@media (max-width: 992px) {
+	.education-category__desc {
+		max-width: 100%;
+	}
+	.education-category__elem:nth-child(odd)::before {
+        width: 257px;
+        height: 162px;
+	}
+	.education-category__elem:nth-child(even)::before {
+		width: 249px;
+        height: 150px;
+	}
+}
+@media (max-width: 768px) {
+	.education-category__elem:nth-child(odd)::before {
+        width: 211px;
+        height: 135px;
+	}
+	.education-category__elem:nth-child(even)::before {
+        width: 197px;
+        height: 120px;
+	}
+}
+@media (max-width: 576px) {
+    .education-category__elem {
+		padding: 15px 15px 140px 15px;
+	}
+	.education-category__elem:nth-child(odd)::before {
+        width: 172px;
+        height: 110px;
+	}
+	.education-category__elem:nth-child(even)::before {
+        width: 177px;
+        height: 110px;
+	}
+}

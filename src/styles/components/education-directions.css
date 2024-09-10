@@ -1,0 +1,502 @@
+.education-directions__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.education-directions__elem {
+    width: calc((100% - 25px) / 2);
+    height: 398px;
+    overflow: hidden;
+}
+.education-directions__elem:first-child {
+    padding: 54px 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education-directions__elem:not(:first-child) {
+    padding: 58px 56px 43px 56px;
+    background-color: #e7edff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+}
+.education-directions__elem:not(:first-child)::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-lightning {
+    background-color: #e7edff;
+    padding-right: 221px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-gear {
+    background-color: #c2eb9a;
+    padding-right: 227px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-medical {
+    background-color: #ffe8f3;
+    padding-right: 220px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-leaf {
+    background-color: #ffda94;
+    padding-right: 180px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-circle {
+    background-color: #c2eb9a;
+    padding-right: 241px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-academ {
+    background-color: #ffe8f3;
+    padding-right: 248px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-book {
+    background-color: #e7edff;
+    padding-right: 220px;
+}
+.education-directions__elem.education-directions__elem_decor-lightning::before {
+    top: 0;
+    width: 221px;
+    height: 398px;
+    background-image: url("../images/education-directions/decor-lightning.svg");
+}
+.education-directions__elem_decor-gear::before {
+    width: 207px;
+    height: 325px;
+    background-image: url("../images/education-directions/decor-gear.svg");
+}
+.education-directions__elem_decor-medical::before {
+    width: 200px;
+    height: 315px;
+    background-image: url("../images/education-directions/decor-medical.svg");
+}
+.education-directions__elem_decor-leaf::before {
+    width: 273px;
+    height: 321px;
+    background-image: url("../images/education-directions/decor-leaf.svg");
+}
+.education-directions__elem_decor-circle::before {
+    width: 221px;
+    height: 299px;
+    background-image: url("../images/education-directions/decor-circle.svg");
+}
+.education-directions__elem_decor-academ::before {
+    width: 277px;
+    height: 244px;
+    background-image: url("../images/education-directions/decor-academ.svg");
+}
+.education-directions__elem_decor-book::before {
+    width: 200px;
+    height: 246px;
+    background-image: url("../images/education-directions/decor-book.svg");
+}
+
+.education-directions__elem.education-directions__elem_decor-ufic::before,
+.education-directions__elem.education-directions__elem_decor-uunit::before,
+.education-directions__elem.education-directions__elem_decor-ugntu::before,
+.education-directions__elem.education-directions__elem_decor-bgmu::before,
+.education-directions__elem.education-directions__elem_decor-bgau::before,
+.education-directions__elem.education-directions__elem_decor-bgpu::before,
+.education-directions__elem.education-directions__elem_decor-ipsm::before {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.education-directions__elem_decor-ufic::before {
+    width: 269px;
+    height: 200px;
+    background-image: url("../images/education-directions/decor-ufic.svg");
+}
+.education-directions__elem_decor-uunit::before {
+    width: 227px;
+    height: 237px;
+    background-image: url("../images/education-directions/decor-uunit.svg");
+}
+.education-directions__elem_decor-ugntu::before {
+    width: 225px;
+    height: 280px;
+    background-image: url("../images/education-directions/decor-ugntu.svg");
+}
+.education-directions__elem_decor-bgmu::before {
+    width: 197px;
+    height: 258px;
+    background-image: url("../images/education-directions/decor-bgmu.svg");
+}
+.education-directions__elem_decor-bgau::before {
+    width: 220px;
+    height: 325px;
+    background-image: url("../images/education-directions/decor-bgau.svg");
+}
+.education-directions__elem_decor-bgpu::before {
+    width: 255px;
+    height: 261px;
+    background-image: url("../images/education-directions/decor-bgpu.svg");
+}
+.education-directions__elem_decor-ipsm::before {
+    width: 183px;
+    height: 355px;
+    background-image: url("../images/education-directions/decor-ipsm.svg");
+}
+
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-ufic {
+    background-color: #ffe8f3;
+    padding-right: 269px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-uunit {
+    padding-right: 240px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-ugntu {
+    background-color: #c2eb9a;
+    padding-right: 225px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-bgmu {
+    background-color: #ffda94;
+    padding-right: 200px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-bgau {
+    background-color: #c2eb9a;
+    padding-right: 150px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-bgpu {
+    background-color: #ffe8f3;
+    padding-right: 227px;
+}
+.education-directions__elem:not(
+        :first-child
+    ).education-directions__elem_decor-ipsm {
+    padding-right: 158px;
+}
+
+.education-directions__title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+    margin: 0;
+}
+.education-directions__elem-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+.education-directions__elem-subtitle {
+    font-size: 16px;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+.education-directions__elem-button {
+    margin: auto 0 0 0;
+    width: 170px;
+    height: 50px;
+}
+@media (max-width: 1200px) {
+    .education-directions__elem:first-child,
+    .education-directions__elem:not(:first-child) {
+        height: 300px;
+        padding: 15px;
+    }
+    .education-directions__elem-title {
+        font-size: 18px;
+    }
+
+    .education-directions__elem.education-directions__elem_decor-lightning::before {
+        width: 167px;
+        height: 300px;
+    }
+    .education-directions__elem_decor-gear::before {
+        width: 143px;
+        height: 225px;
+    }
+    .education-directions__elem_decor-medical::before {
+        width: 138px;
+        height: 217px;
+    }
+    .education-directions__elem_decor-leaf::before {
+        width: 188px;
+        height: 221px;
+    }
+    .education-directions__elem_decor-circle::before {
+        width: 147px;
+        height: 199px;
+    }
+    .education-directions__elem_decor-academ::before {
+        width: 164px;
+        height: 144px;
+    }
+    .education-directions__elem_decor-book::before {
+        width: 119px;
+        height: 146px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-lightning {
+        padding-right: 177px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-gear {
+        padding-right: 153px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-medical {
+        padding-right: 148px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-leaf {
+        padding-right: 198px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-circle {
+        padding-right: 157px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-academ {
+        padding-right: 174px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-book {
+        padding-right: 129px;
+    }
+
+	.education-directions__elem_decor-ufic::before {
+		width: 134px;
+		height: 100px;
+	}
+	.education-directions__elem_decor-uunit::before {
+		width: 142px;
+		height: 148px;
+	}
+	.education-directions__elem_decor-ugntu::before {
+		width: 142px;
+		height: 177px;
+	}
+	.education-directions__elem_decor-bgmu::before {
+		width: 130px;
+		height: 170px;
+	}
+	.education-directions__elem_decor-bgau::before {
+		width: 100px;
+		height: 211px;
+	}
+	.education-directions__elem_decor-bgpu::before {
+		width: 130px;
+		height: 149px;
+	}
+	.education-directions__elem_decor-ipsm::before {
+		width: 100px;
+		height: 223px;
+	}
+
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-ufic {
+		padding-right: 100px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-uunit {
+		padding-right: 145px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-ugntu {
+		padding-right: 143px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-bgmu {
+		padding-right: 130px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-bgau {
+		padding-right: 130px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-bgpu {
+		padding-right: 130px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-ipsm {
+		padding-right: 100px;
+	}
+}
+@media (max-width: 768px) {
+    .education-directions__title {
+        font-size: 30px;
+    }
+    .education-directions__elem {
+        width: 100%;
+    }
+    .education-directions__elem:first-child {
+		height: auto;
+	}
+    .education-directions__elem:not(:first-child) {
+        height: 180px;
+    }
+
+    .education-directions__elem-title {
+        font-size: 14px;
+    }
+    .education-directions__elem-subtitle {
+        font-size: 12px;
+    }
+    .education-directions__elem-button {
+        font-size: 14px;
+        padding: 0 15px;
+        height: 30px;
+        width: 130px;
+    }
+
+	.education-directions__elem_decor-lightning,
+    .education-directions__elem_decor-gear,
+    .education-directions__elem_decor-medical,
+    .education-directions__elem_decor-leaf,
+    .education-directions__elem_decor-circle,
+    .education-directions__elem_decor-academ,
+    .education-directions__elem_decor-book {
+        top: 15px;
+    }
+
+    .education-directions__elem.education-directions__elem_decor-lightning::before {
+        width: 100px;
+        height: 180px;
+        top: 0;
+    }
+    .education-directions__elem_decor-gear::before {
+        width: 96px;
+        height: 150px;
+    }
+    .education-directions__elem_decor-medical::before {
+        width: 95px;
+        height: 150px;
+    }
+    .education-directions__elem_decor-leaf::before {
+        width: 130px;
+        height: 150px;
+    }
+    .education-directions__elem_decor-circle::before {
+        width: 111px;
+        height: 150px;
+    }
+    .education-directions__elem_decor-academ::before {
+        width: 150px;
+        height: 170px;
+    }
+    .education-directions__elem_decor-book::before {
+        width: 121px;
+        height: 150px;
+    }
+
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-lightning {
+        padding-right: 110px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-gear {
+        padding-right: 160px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-medical {
+        padding-right: 105px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-leaf {
+        padding-right: 140px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-circle {
+        padding-right: 121px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-academ {
+        padding-right: 160px;
+    }
+    .education-directions__elem:not(
+            :first-child
+        ).education-directions__elem_decor-book {
+        padding-right: 131px;
+    }
+
+	.education-directions__elem_decor-ufic::before {
+		width: 100px;
+		height: 74px;
+	}
+	.education-directions__elem_decor-uunit::before {
+		width: 100px;
+		height: 104px;
+	}
+	.education-directions__elem_decor-ugntu::before {
+		width: 100px;
+		height: 125px;
+	}
+	.education-directions__elem_decor-bgmu::before {
+		width: 100px;
+		height: 131px;
+	}
+	.education-directions__elem_decor-bgau::before {
+		width: 109px;
+		height: 160px;
+	}
+	.education-directions__elem_decor-bgpu::before {
+		width: 100px;
+		height: 115px;
+	}
+	.education-directions__elem_decor-ipsm::before {
+		width: 72px;
+		height: 160px;
+	}
+
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-ufic {
+		padding-right: 100px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-uunit {
+		padding-right: 100px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-ugntu {
+		padding-right: 100px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-bgmu {
+		padding-right: 100px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-bgau {
+		padding-right: 109px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-bgpu {
+		padding-right: 100px;
+	}
+	.education-directions__elem:not( :first-child ).education-directions__elem_decor-ipsm {
+		padding-right: 72px;
+	}
+}

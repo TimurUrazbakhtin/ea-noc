@@ -1,0 +1,29 @@
+@import 'components/settings.css';
+@import 'components/header.css';
+@import 'components/form.css';
+@import 'components/select.css';
+@import 'components/search.css';
+@import 'components/table.css';
+@import 'components/accordion.css';
+@import 'components/desc.css';
+@import 'components/filter.css';
+@import 'components/popup.css';
+@import 'components/slider.css';
+
+@import 'components/hero.css';
+@import 'components/hero-slider.css';
+@import 'components/about.css';
+@import 'components/desc-img.css';
+@import 'components/about-desc.css';
+@import 'components/about-numbers.css';
+@import 'components/education-category.css';
+@import 'components/half-block.css';
+@import 'components/education-directions.css';
+@import 'components/direction.css';
+@import 'components/courses.css';
+@import 'components/course.css';
+@import 'components/industries.css';
+@import 'components/cards.css';
+@import 'components/laboratory.css';
+
+@import 'components/footer.css';

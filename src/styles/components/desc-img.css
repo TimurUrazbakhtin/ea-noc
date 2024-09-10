@@ -1,0 +1,110 @@
+.desc-img {
+	padding: 64px 0;
+	overflow: hidden;
+}
+.desc-img_bg-gray {
+	background-color: #EDEFF3;
+}
+.desc-img__body {
+	display: flex;
+	gap: 50px;
+}
+.desc-img__body_reverse {
+	flex-direction: row-reverse;
+}
+.desc-img__desc {
+	width: 100%;
+}
+.desc-img__title {
+	margin: 0 0 25px 0;
+}
+.desc-img__text {
+	font-size: 16px;
+	line-height: 144%;
+	color: #000;
+	margin: 0 0 45px 0;
+}
+.desc-img__img {
+	height: 325px;
+	min-width: 384px;
+	position: relative;
+}
+
+.desc-img__img::before,
+.desc-img__img::after {
+	content: '';
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 1;
+}
+
+.desc-img__img_decor-1::before {
+	width: 143px;
+	height: 143px;
+	background-image: url('../images/desc-img/decor-1.svg');
+	top: -49px;
+	left: -56px;
+	transform: rotate(-5.24deg);
+}
+.desc-img__img_decor-1::after {
+	background-image: url('../images/desc-img/decor-2.svg');
+	width: 123px;
+	height: 127px;
+	right: 0;
+	bottom: -31px;
+}
+.desc-img__img_decor-2::before {
+	width: 108px;
+	height: 87px;
+	background-image: url('../images/desc-img/decor-3.svg');
+	top: -55px;
+	right: -32px;
+	transform: rotate(5.9deg);
+}
+.desc-img__img_decor-2::after {
+	width: 104px;
+	height: 88px;
+	background-image: url('../images/desc-img/decor-4.svg');
+	bottom: -45px;
+	left: 5px;
+	transform: rotate(-15.02deg);
+}
+.desc-img__img_decor-3::before {
+	width: 90px;
+	height: 90px;
+	background-image: url('../images/desc-img/decor-5.svg');
+	top: -50px;
+	right: 6px;
+}
+.desc-img__img_decor-3::after {
+	width: 78px;
+	height: 115px;
+	background-image: url('../images/desc-img/decor-6.svg');
+	bottom: 10px;
+	left: -51px;
+	transform: rotate(10.2deg);
+}
+
+.desc-img__img img {
+	position: relative;
+	z-index: 2;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+}
+.desc-img__button {
+	width: 283px;
+	height: 50px;
+}
+@media (max-width: 768px) {
+	.desc-img__body {
+		flex-direction: column-reverse;
+	}
+	.desc-img__img {
+		height: 100%;
+		width: 100%;
+		min-width: 100%;
+	}
+}

@@ -1,0 +1,235 @@
+@@include('partials/header.html', { "title": "Курсы повышения квалификации и переподготовки", })
+
+<section class="section section_mb-40 hero">
+    <div class="container">
+        <div class="hero__body hero__body_block">
+            <div class="hero__start hero__start_full">
+                <div class="swiper one-slider hero__slider">
+                    <div class="swiper-wrapper hero__slider-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                src="@@webRoot/images/hero/courses.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="@@webRoot/images/hero/courses.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="@@webRoot/images/hero/courses.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination hero_slider-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="filter">
+	<div class="container">
+		<div class="filter__half-block">
+			<div class="filter__half-block-elem">
+				<form method="get" class="search">
+					<input
+						type="text"
+						class="input search__input"
+						placeholder="Поиск"
+					/>
+					<button type="submit" class="search__button"></button>
+				</form>
+			</div>
+	
+			<div class="filter__half-block-elem">
+				<div class="info-text">
+					По окончании курса выдается официальный документ, который
+					действует на всей территории РФ
+				</div>
+			</div>
+		</div>
+	
+		<div class="filter__four-block">
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Выбор направления" data-placeholder="Выбор направления" multiple>
+					<option>
+						Математические и естественные науки
+					</option>
+					<option>
+						Инженерное дело, технологии и технические науки
+					</option>
+					<option>
+						Здравоохранение и медицинские науки
+					</option>
+					<option>
+						Сельское хозяйство и сельскохозяйственные науки
+					</option>
+					<option>
+						Науки об обществе
+					</option>
+					<option>
+						Образование и педагогические науки
+					</option>
+					<option>
+						Гуманитарные науки
+					</option>
+				</select>
+			</div>
+	
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Тип программы" data-placeholder="Тип программы" multiple>
+					<option>
+						Курс повышения квалификации
+					</option>
+					<option>
+						Курс переподготовки
+					</option>
+				</select>
+			</div>
+	
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Все университеты" data-placeholder="Все университеты" multiple>
+					<option>
+						УФИЦ РАН
+					</option>
+					<option>
+						УУНиТ
+					</option>
+					<option>
+						УГНТУ
+					</option>
+					<option>
+						БГМУ
+					</option>
+					<option>
+						БГАУ
+					</option>
+					<option>
+						БГПУ
+					</option>
+					<option>
+						ИПСМ РАН
+					</option>
+				</select>
+			</div>
+	
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Количество часов" data-placeholder="Количество часов" multiple>
+					<option>
+						От 16 до 36
+					</option>
+					<option>
+						От 40 до 96
+					</option>
+					<option>
+						От 100 до 144
+					</option>
+					<option>
+						250 и более
+					</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section courses">
+    <div class="container">
+        <div class="courses__blocks">
+			<div class="courses__block">
+				<h2 class="title courses__title">Актуальные курсы</h2>
+	
+				<div class="courses__wrapper">
+					@@for (var i = 1; i < 7; i++) {
+					<div class="courses__elem courses__elem_bg-change">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+	
+						<ul class="courses__feature">
+							<li
+								class="courses__feature-elem courses__feature-elem_icon-location"
+							>
+								УГНТУ
+							</li>
+							<li
+								class="courses__feature-elem courses__feature-elem_icon-time"
+							>
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">15 900 ₽</div>
+	
+						<a
+							href="@@webRoot/course.html"
+							class="button button_arrow courses__elem-button"
+						>
+							Перейти
+						</a>
+					</div>
+					}
+					
+				</div>
+			</div>
+	
+			<div class="courses__block">
+				<h2 class="title">Все курсы</h2>
+	
+				<div class="courses__wrapper">
+					@@for (var i = 1; i < 4; i++) {
+					<div class="courses__elem">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+						
+						<ul class="courses__feature">
+							<li
+								class="courses__feature-elem courses__feature-elem_icon-location"
+							>
+								УГНТУ
+							</li>
+							<li
+								class="courses__feature-elem courses__feature-elem_icon-time"
+							>
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">Индивидуально</div>
+	
+						<a
+							href="@@webRoot/course.html"
+							class="button button_arrow courses__elem-button"
+						>
+							Перейти
+						</a>
+					</div>
+					}
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+
+@@include('partials/footer.html')

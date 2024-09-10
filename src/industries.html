@@ -1,0 +1,117 @@
+@@include('partials/header.html', { "title": "Каталог научных разработок и услуг", })
+
+<div class="container">
+    <section class="section hero-slider">
+        <div class="hero-slider__start">
+            <h1 class="hero-slider__title">
+                Разработки, услуги, продукты и научные исследования для вашего
+                бизнеса
+            </h1>
+
+            <h2 class="hero-slider__subtitle">
+                Доверьтесь нашему опыту и инновациям, чтобы вывести ваш бизнес
+                на новый уровень.
+            </h2>
+        </div>
+
+        <div class="hero-slider__end one-slider-button">
+            <div class="swiper hero-slider__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-slider__elem">
+                        <div class="hero-slider__elem-img">
+                            <img
+                                src="@@webRoot/images/hero-slider/hero-slider-1.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <h3 class="hero-slider__elem-title">
+                            Описание успешной практики
+                        </h3>
+                    </div>
+                    <div class="swiper-slide hero-slider__elem">
+                        <div class="hero-slider__elem-img">
+                            <img
+                                src="@@webRoot/images/hero-slider/hero-slider-1.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <h3 class="hero-slider__elem-title">
+                            Описание успешной практики
+                        </h3>
+                    </div>
+                    <div class="swiper-slide hero-slider__elem">
+                        <div class="hero-slider__elem-img">
+                            <img
+                                src="@@webRoot/images/hero-slider/hero-slider-1.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <h3 class="hero-slider__elem-title">
+                            Описание успешной практики
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev hero-slider__button-prev"></div>
+            <div class="swiper-button-next hero-slider__button-next"></div>
+        </div>
+    </section>
+
+    <section class="section industries">
+        <h2 class="title title_center industries__title">
+            Отрасли научных разработок и услуг
+        </h2>
+
+        <div class="industries__wrapper">
+			@@for (var i = 1; i < 17; i++) {
+            <div class="industries__elem">
+				<h3 class="industries__elem-title">
+                    Центр искусственного интеллекта
+                </h3>
+
+                <div class="industries__elem-desc">
+                    С другой стороны, новая модель организационной деятельности
+                    обеспечивает актуальность новых предложений. И нет сомнений,
+                    что реплицированные с зарубежных источников, современные
+                    исследования разоблачены.
+                </div>
+
+				<div class="industries__elem-buttons">
+					<a href="@@webRoot/services.html" class="button industries__elem-button">
+						Услуги
+					</a>
+					<a href="@@webRoot/developments.html" class="button industries__elem-button">
+						Научные продукты и разработки
+					</a>
+					<a href="@@webRoot/research-directions.html" class="button industries__elem-button">
+						Направления исследований
+					</a>
+				</div>
+            </div>
+			}
+        </div>
+    </section>
+
+	<section class="section industries__desc">
+		<div class="industries__desc-text">
+			<h3 class="title industries__desc-title">
+				Для кого будет полезно?
+			</h3>
+
+			<p>
+				Наши предложения предназначены для предпринимателей, менеджеров и исследователей, которые ищут инновационные решения для роста и развития своего бизнеса. В этом разделе вы найдете передовые продукты и услуги, способные оптимизировать ваши бизнес-процессы, повысить эффективность и помочь вам достичь новых высот. Независимо от размера вашего предприятия, мы предлагаем адаптированные решения, которые удовлетворят ваши уникальные потребности и помогут вам достичь поставленных целей.
+			</p>
+			
+			<p>
+				Мы понимаем, что каждый бизнес уникален, поэтому наши услуги и продукты разработаны с учетом специфики различных отраслей. Наши исследования направлены на выявление лучших практик и внедрение передовых технологий, чтобы вы могли оставаться конкурентоспособными на рынке.
+			</p>
+		</div>
+
+		<div class="industries__desc-img">
+			<img src="@@webRoot/images/industries/desc-img.jpg" alt="">
+		</div>
+	</section>
+</div>
+
+@@include('partials/footer.html')

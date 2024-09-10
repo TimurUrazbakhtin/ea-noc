@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    cursor: pointer;
+}
+body.lock {
+	overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+*::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #2461FF;
+	width: 5px;
+	border-radius: 10px;
+}
+* {
+    scrollbar-color: #2461FF #F4F4F4;
+    scrollbar-width: thin;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+.container  {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.button {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	gap: 10px;
+    text-align: center;
+    background-color: #2461FF;
+    color: #fff;
+    border: 0;
+    height: 44px;
+    border-radius: 12px;
+}
+.button_white {
+	background-color: #fff;
+	color: #000;
+}
+.button_arrow::after {
+	content: '';
+	display: block;
+	background: url('../images/button/arrow.svg') no-repeat center / contain;
+	width: 14px;
+	height: 14px;
+}
+.button-back {
+    display: block;
+	text-decoration: underline;
+    margin: 0 0 25px 0;
+}
+.title {
+	font-weight: 700;
+	font-size: 30px;
+	color: #000;
+	margin: 0 0 30px 0;
+}
+.title_center {
+	text-align: center;
+}
+.section {
+	margin: 0 0 80px 0;
+}
+.section_mb-40 {
+	margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+	.title {
+		font-size: 26px;
+	}
+}
+@media (max-width: 992px) {
+	.title {
+        font-size: 20px;
+	}
+	.section {
+		margin: 0 0 60px 0;
+	}
+	.section_mb-40 {
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 768px) {
+	.section {
+		margin: 0 0 40px 0;
+	}
+}
+@media (max-width: 576px) {
+}

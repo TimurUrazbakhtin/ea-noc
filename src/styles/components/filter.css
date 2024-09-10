@@ -1,0 +1,30 @@
+.filter__half-block {
+    display: flex;
+	flex-wrap: wrap;
+    column-gap: 25px;
+	row-gap: 15px;
+    margin: 0 0 25px 0;
+}
+.filter__half-block-elem {
+    width: calc((100% - 25px) / 2);
+}
+.filter__four-block {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin: 0 0 25px 0;
+}
+.filter__four-block-elem {
+	width: calc((100% - 75px) / 4);
+}
+@media (max-width: 992px) {
+	.filter__four-block-elem {
+		width: calc((100% - 25px) / 2);
+	}
+}
+@media (max-width: 768px) {
+	.filter__four-block-elem,
+	.filter__half-block-elem {
+		width: 100%;
+	}
+}

@@ -1,0 +1,27 @@
+.half-block__body {
+	display: flex;
+	gap: 25px;
+}
+.half-block__col {
+	width: calc((100% - 25px) / 2);
+}
+.half-block__title {
+	margin: 0 0 29px 0;
+}
+.half-block__desc {
+	font-size: 16px;
+	line-height: 144%;
+	text-align: justify;
+	color: #000;
+}
+.half-block__img img {
+	width: 100%;
+}
+@media (max-width: 768px) {
+	.half-block__body {
+		flex-direction: column-reverse;
+	}
+	.half-block__col {
+		width: 100%;
+	}
+}

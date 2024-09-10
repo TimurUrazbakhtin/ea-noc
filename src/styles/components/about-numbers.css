@@ -1,0 +1,65 @@
+.about-numbers__title {
+	margin: 0 0 40px 0;
+}
+.about-numbers__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+.about-numbers__elem {
+	width: calc((100% - 150px) / 4);
+}
+.about-numbers__elem-top {
+	font-weight: 700;
+	font-size: 52px;
+	color: #313b48;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+}
+.about-numbers__elem-top::after {
+	content: '';
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.about-numbers__elem-top_icon-book::after {
+	width: 78px;
+	height: 65px;
+	background-image: url('../images/about-numbers/book.svg');
+}
+.about-numbers__elem-top_icon-academ::after {
+	width: 80px;
+	height: 64px;
+	background-image: url('../images/about-numbers/academ.svg');
+}
+.about-numbers__elem-top_icon-flask::after {
+	width: 60px;
+	height: 65px;
+	background-image: url('../images/about-numbers/flask.svg');
+}
+.about-numbers__elem-top_icon-circle::after {
+	width: 65px;
+	height: 65px;
+	background-image: url('../images/about-numbers/circle.svg');
+}
+.about-numbers__elem-bottom {
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 0;
+	border-top: 1px solid #000;
+	font-weight: 500;
+	font-size: 14px;
+	color: #000;
+}
+@media (max-width: 992px) {
+	.about-numbers__elem {
+		width: calc((100% - 50px) / 2);
+	}
+}
+@media (max-width: 576px) {
+	.about-numbers__elem {
+		width: 100%;
+	}
+}

@@ -1,0 +1,41 @@
+<div class="popup" id="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <h3 class="title title_center popup__title">
+				Хотите оставить заявку?
+			</h3>
+
+			<h4 class="popup__subtitle">
+				Отправьте заявку и наш специалист
+				свяжется с вами
+			</h4>
+
+            <div class="popup__form">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <input type="text" class="input" placeholder="Имя" />
+                    <input type="text" class="input" placeholder="Организация" />
+                    <input type="text" class="input phone" placeholder="+7 (___) ___-____" />
+
+                    <input type="email" class="input" placeholder="Почта" />
+
+					<textarea placeholder="Вопросы" class="textarea"></textarea> 
+
+					<div class="popup__checkbox checkbox">
+						<input type="checkbox" id="sogl" class="checkbox__input popup__checkbox-input" required>
+						<label for="sogl" class="checkbox__label popup__checkbox-label">
+							<span>
+								Я согласен на обработку персональных данных и ознакомлен с условиями <a href="#">пользовательского соглашения</a>
+							</span>
+						</label>
+					</div>
+
+					<button type="submit" class="popup__button button">
+						Отправить
+					</button>
+                </form>
+            </div>
+
+            <button type="button" class="popup__close popup-close"></button>
+        </div>
+    </div>
+</div>

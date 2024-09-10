@@ -1,0 +1,64 @@
+@@include('partials/header.html', {
+	"title": "Направления исследовании для нефтяной промышленности",
+})
+
+<section class="section direction">
+	<div class="container">
+		<a href="@@webRoot/industries.html" class="button-back">
+			←  Вернуться к выбору направления
+		</a>
+
+		<div class="direction__top">
+			<h1 class="title direction__title">
+				Направления исследовании для нефтяной промышленности
+			</h1>
+
+			<form method="get" class="search direction__search">
+				<input type="text" class="input search__input" placeholder="Поиск">
+				<button type="submit" class="search__button"></button>
+			</form>
+		</div>
+
+		<div class="direction__body">
+			@@for (var i = 1; i < 5; i++) {
+			<div class="direction__accordion accordion">
+				<div class="direction__accordion-top">
+					`+i+`. Название ВУЗа
+				</div>
+
+				<div class="direction__accordion-body accordion-body">
+					@@for (var i = 1; i < 5; i++) {
+					<div class="direction__accordion-body-elem">
+						Название исследований
+					</div>
+					}
+				</div>
+			</div>
+			}
+		</div>
+	</div>
+</section>
+
+<div class="container">
+	<section class="section desc-block">
+		<h2 class="title desc-block__title">
+			Научные исследования для нефтяной промышелнности
+		</h2>
+	
+		<div class="desc-block__text">
+			<p>
+				Раздел "Научные исследования нефтяной промышленности" на портале "Научный каталог" посвящен передовым научным разработкам и исследованиям, направленным на повышение эффективности и безопасности в нефтедобыче и переработке. Наши исследования охватывают широкий спектр тем, включая инновационные методы добычи, улучшение качества продукции, снижение экологического воздействия и оптимизацию производственных процессов.
+			</p>
+
+			<p>
+				Специалисты "Научного каталога" активно работают над созданием новых технологий и совершенствованием существующих решений, чтобы удовлетворить потребности современного рынка. Мы сотрудничаем с ведущими научными учреждениями и промышленными предприятиями, чтобы обеспечить нашим клиентам доступ к самым актуальным и эффективным научным достижениям.
+			</p>
+
+			<p>
+				Если вы заинтересованы в передовых научных исследованиях, которые могут помочь вашему бизнесу достичь новых высот, свяжитесь с нами. Мы готовы предложить вам самые современные и эффективные решения для нефтяной промышленности.
+			</p>
+		</div>
+	</section>
+</div>
+
+@@include('partials/footer.html')
