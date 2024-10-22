@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Руководство пользователя</title>
+	
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/personal.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<button type="button" class="header__burger">
+				<span></span>
+			</button>
+
+			<div class="header__text">
+				Руководство пользователя
+			</div>
+
+
+			<a href="./index.html" class="header__logo">
+				<img src="./images/header/logo.svg" alt="Логотип">
+			</a>
+			
+		</div>	
+		
+		<aside class="header__sidebar">
+			<div class="header__sidebar-top">
+				<div class="header__profile">
+					<div class="header__profile-img">
+						<img src="./images/header/uust.svg" alt="">
+					</div>
+
+					<div class="header__profile-name">УУНИТ</div>
+				</div>
+			</div>
+			
+			<div class="header__sidebar-inner">
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="./personal.html" class="header__link active header__link_question">
+								Руководство пользователя
+							</a>
+						</li>
+
+						<li>
+							<a href="./personal-courses.html" class="header__link header__link_courses">
+								Курсы
+							</a>
+						</li>
+
+						<li>
+							<a href="./personal-programs.html" class="header__link header__link_prog">
+								Программы
+							</a>
+						</li>
+
+						<li>
+							<a href="./personal-laboratories.html" class="header__link header__link_lab">
+								Лаборатории
+							</a>
+						</li>
+
+						<li>
+							<a href="./personal-services.html" class="header__link header__link_services">
+								Услуги
+							</a>
+						</li>
+
+						<li>
+							<a href="./personal-services.html" class="header__link header__link_dev">
+								Разработки
+							</a>
+						</li>
+
+						<li>
+							<a href="./personal-directions.html" class="header__link header__link_direct">
+								Направления исследования
+							</a>
+						</li>
+					</ul>
+				</nav>
+	
+				<div class="header__sidebar-buttons">
+					<a href="./" class="header__link header__link_back">Вернуться на сайт</a>
+
+					<a href="./" class="header__link header__link_exit">Выйти</a>
+				</div>
+			</div>
+		</aside>
+	</header>
+	<main class="main">
+
+<section class="bg-white">
+	<h3 class="mb-20">Руководство пользователя:</h3>
+
+	<ol class="number-list">
+		<li>
+			<strong>Курсы:</strong> В этом разделе вы можете просматривать уже добавленные курсы, а также добавлять новые курсы, включая подробную информацию о каждом из них.		
+		</li>
+
+		<li>
+			<strong>Программы:</strong> Здесь представлены различные программы высшего образования, которые можно просматривать и редактировать, добавляя новые программы и обновляя существующие.
+		</li>
+
+		<li>
+			<strong>Научные лаборатории:</strong> Раздел, где вы можете ознакомиться с перечнем научных лабораторий, управлять их описанием и добавлять информацию о новых лабораториях.
+		</li>
+
+		<li>
+			<strong>Услуги:</strong> В этом разделе можно добавлять и редактировать список предоставляемых услуг, а также просматривать уже добавленные услуги с их детальным описанием.
+		</li>
+
+		<li>
+			<strong>Научные разработки:</strong> Здесь представлены различные научные разработки. Вы можете просматривать их, добавлять новые разработки и обновлять информацию по существующим проектам.
+		</li>
+
+		<li>
+			<strong>Направления исследования:</strong> Раздел, где вы можете просматривать и управлять направлениями исследований, добавлять новые направления и обновлять информацию по текущим исследованиям.
+		</li>
+	</ol>
+</section>
+
+	</main>
+	<div class="popup" id="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<h3 class="title title_center popup__title">
+				Добавление курса
+			</h3>
+
+			<div class="popup__form">
+				<form action="" method="post" enctype="multipart/form-data">
+					<input type="text" class="input" placeholder="Имя">
+					<input type="text" class="input" placeholder="Организация">
+					<input type="text" class="input phone" placeholder="+7 (___) ___-____">
+
+					<input type="email" class="input" placeholder="Почта">
+
+					<div class="file">
+						<input name="file" type="file" id="file" accept="image/*" class="file__input" multiple="multiple">
+						
+						<label class="file__wrapper" for="file">
+							<div class="file__text">Загрузить фото</div>
+						</label>
+					</div>
+
+					<textarea placeholder="Вопросы" class="textarea"></textarea>
+
+					<button type="submit" class="popup__button button">
+						Отправить
+					</button>
+				</form>
+			</div>
+
+			<button type="button" class="popup__close popup-close"></button>
+		</div>
+	</div>
+</div>
+
+	<script src="js/libs.js"></script>
+	<script src="js/personal.js"></script>
+</body>
+</html>

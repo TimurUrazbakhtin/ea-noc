@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Курсы повышения квалификации и переподготовки</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <a href="." class="header__logo">
+                        <img src="./images/header/logo.svg" alt="Логотип">
+                    </a>
+
+					<ul class="header__education-list" style="margin-right: 0;">
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/ufaras.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/uust.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/ugntu.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/bashgmu.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/bsau.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/bspu.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/imsp.svg" alt="">
+							</a>
+						</li>
+					</ul>
+
+					<!-- <button type="button" class="button header__button">Войти</button> -->
+
+          <a href="./personal.html" class="button header__button">Личный кабинет</a>
+
+					<button type="button" class="header__burger" style="margin-left: auto;">
+                        <span></span>
+                    </button>
+                </div>
+
+				<div class="header__bottom">
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li>
+								<a href="./industries.html" class="header__link">
+									Каталог научных разработок и услуг
+								</a>
+							</li>
+		
+							<li>
+								<a href="./higher-education.html" class="header__link">
+									Каталог программ высшего образования
+								</a>
+							</li>
+		
+							<li>
+								<a href="./courses.html" class="header__link">
+									Каталог программ дополнительного образования
+								</a>
+							</li>
+		
+							<li>
+								<a href="./laboratories.html" class="header__link">
+									Научные лаборатории
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<ul class="header__education-list">
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/ufaras.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/uust.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/ugntu.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/bashgmu.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/bsau.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/bspu.svg" alt="">
+							</a>
+						</li>
+
+						<li>
+							<a href="" target="_blank">
+								<img src="./images/header/imsp.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+            </div>			
+        </header>
+        <main class="main">
+
+<section class="section section_mb-40 hero">
+    <div class="container">
+        <div class="hero__body hero__body_block">
+            <div class="hero__start hero__start_full">
+                <div class="swiper one-slider hero__slider">
+                    <div class="swiper-wrapper hero__slider-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/hero/courses.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/hero/courses.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/hero/courses.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination hero_slider-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="filter">
+	<div class="container">
+		<div class="filter__half-block">
+			<div class="filter__half-block-elem">
+				<form method="get" class="search">
+					<input type="text" class="input search__input" placeholder="Поиск">
+					<button type="submit" class="search__button"></button>
+				</form>
+			</div>
+	
+			<div class="filter__half-block-elem">
+				<div class="info-text">
+					По окончании курса выдается официальный документ, который
+					действует на всей территории РФ
+				</div>
+			</div>
+		</div>
+	
+		<div class="filter__four-block">
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Выбор направления" data-placeholder="Выбор направления" multiple="multiple">
+					<option>
+						Математические и естественные науки
+					</option>
+					<option>
+						Инженерное дело, технологии и технические науки
+					</option>
+					<option>
+						Здравоохранение и медицинские науки
+					</option>
+					<option>
+						Сельское хозяйство и сельскохозяйственные науки
+					</option>
+					<option>
+						Науки об обществе
+					</option>
+					<option>
+						Образование и педагогические науки
+					</option>
+					<option>
+						Гуманитарные науки
+					</option>
+				</select>
+			</div>
+	
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Тип программы" data-placeholder="Тип программы" multiple="multiple">
+					<option>
+						Курс повышения квалификации
+					</option>
+					<option>
+						Курс переподготовки
+					</option>
+				</select>
+			</div>
+	
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Все университеты" data-placeholder="Все университеты" multiple="multiple">
+					<option>
+						УФИЦ РАН
+					</option>
+					<option>
+						УУНиТ
+					</option>
+					<option>
+						УГНТУ
+					</option>
+					<option>
+						БГМУ
+					</option>
+					<option>
+						БГАУ
+					</option>
+					<option>
+						БГПУ
+					</option>
+					<option>
+						ИПСМ РАН
+					</option>
+				</select>
+			</div>
+	
+			<div class="filter__four-block-elem">
+				<select class="select-choices" aria-label="Количество часов" data-placeholder="Количество часов" multiple="multiple">
+					<option>
+						От 16 до 36
+					</option>
+					<option>
+						От 40 до 96
+					</option>
+					<option>
+						От 100 до 144
+					</option>
+					<option>
+						250 и более
+					</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section courses">
+    <div class="container">
+        <div class="courses__blocks">
+			<div class="courses__block">
+				<h2 class="title courses__title">Актуальные курсы</h2>
+	
+				<div class="courses__wrapper">
+					
+					<div class="courses__elem courses__elem_bg-change">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+	
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">15 900 ₽</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					<div class="courses__elem courses__elem_bg-change">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+	
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">15 900 ₽</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					<div class="courses__elem courses__elem_bg-change">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+	
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">15 900 ₽</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					<div class="courses__elem courses__elem_bg-change">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+	
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">15 900 ₽</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					<div class="courses__elem courses__elem_bg-change">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+	
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">15 900 ₽</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					<div class="courses__elem courses__elem_bg-change">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+	
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">15 900 ₽</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					
+				</div>
+			</div>
+	
+			<div class="courses__block">
+				<h2 class="title">Все курсы</h2>
+	
+				<div class="courses__wrapper">
+					
+					<div class="courses__elem">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+						
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">Индивидуально</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					<div class="courses__elem">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+						
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">Индивидуально</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+					<div class="courses__elem">
+						<h4 class="courses__elem-subtitle">
+							Инженерное дело и технологии
+						</h4>
+	
+						<div class="courses__elem-title-wrapper">
+							<h3 class="courses__elem-title">
+								Ручной ультразвуковой контроль с использованием
+								дефектоскопов с фазированными решетками
+							</h3>
+						</div>
+						
+						<ul class="courses__feature">
+							<li class="courses__feature-elem courses__feature-elem_icon-location">
+								УГНТУ
+							</li>
+							<li class="courses__feature-elem courses__feature-elem_icon-time">
+								68 часов
+							</li>
+						</ul>
+	
+						<div class="courses__elem-price">Индивидуально</div>
+	
+						<a href="./course.html" class="button button_arrow courses__elem-button">
+							Перейти
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__top-start">
+						<h3 class="footer__title">
+							АНО "УК НОЦ РБ"
+						</h3>
+
+						<p class="footer__desc">
+							<strong>Директор:</strong> Иванов Иван Иванович <br>
+							<strong>Телефон:</strong> 8 800-555-35-35 <br>
+							<strong>E-mail:</strong> email@email.com <br>
+							г. Уфа
+						</p>
+
+						<button type="button" class="button button_white footer__button popup-open" id="popup">
+							Связаться с пресс-службой
+						</button>
+					</div>
+
+					<div class="footer__top-end">
+						<h3 class="footer__title">
+							Остались вопросы?
+						</h3>
+
+						<form action="#" method="post" class="footer__form">
+							<div class="footer__form-start">
+								<input type="text" placeholder="Имя" class="input footer__input">
+								<input type="text" placeholder="+7 (___) ___-____" class="input footer__input phone">
+								<input type="email" placeholder="e-mail" class="input footer__input">
+							</div>
+
+							<div class="footer__form-end">
+								<textarea placeholder="Вопросы" class="textarea footer__textarea"></textarea>
+
+								<div class="footer__form-wrapper-button">
+									<button type="submit" class="button button_white footer__form-button">
+										Отправить
+									</button>
+
+									<div class="checkbox footer__checkbox">
+										<input type="checkbox" id="all" class="checkbox__input footer__checkbox-input" required>
+										<label for="all" class="checkbox__label footer__checkbox-label">
+											<span>
+												Я согласен на обработку персональных данных и ознакомлен с условиями <a href="#">пользовательского соглашения</a>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+				<div class="footer__end">
+				</div>
+			</div>
+		</footer>
+    </div>
+	<div class="popup" id="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <h3 class="title title_center popup__title">
+				Хотите оставить заявку?
+			</h3>
+
+			<h4 class="popup__subtitle">
+				Отправьте заявку и наш специалист
+				свяжется с вами
+			</h4>
+
+            <div class="popup__form">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <input type="text" class="input" placeholder="Имя">
+                    <input type="text" class="input" placeholder="Организация">
+                    <input type="text" class="input phone" placeholder="+7 (___) ___-____">
+
+                    <input type="email" class="input" placeholder="Почта">
+
+					<textarea placeholder="Вопросы" class="textarea"></textarea> 
+
+					<div class="popup__checkbox checkbox">
+						<input type="checkbox" id="sogl" class="checkbox__input popup__checkbox-input" required>
+						<label for="sogl" class="checkbox__label popup__checkbox-label">
+							<span>
+								Я согласен на обработку персональных данных и ознакомлен с условиями <a href="#">пользовательского соглашения</a>
+							</span>
+						</label>
+					</div>
+
+					<button type="submit" class="popup__button button">
+						Отправить
+					</button>
+                </form>
+            </div>
+
+            <button type="button" class="popup__close popup-close"></button>
+        </div>
+    </div>
+</div>
+
+
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
